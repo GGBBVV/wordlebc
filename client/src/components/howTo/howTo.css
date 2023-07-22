@@ -1,0 +1,9 @@
+.how-to-container {
+    display: flex;
+    gap: 20px;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 1rem;
+}
+.how-to {
+    width: 50%;
+}

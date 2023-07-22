@@ -1,0 +1,19 @@
+.header {
+    display:flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+    border-bottom: 1px solid #000000;
+    padding: 0 15px !important;
+    margin: auto !important;
+    height: 80px;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}

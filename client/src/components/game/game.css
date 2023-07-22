@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+.row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2px;
+    transition: 0.3s ease all;
+}
+
+.rows {
+
+    overflow: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    max-height: 50%;
+}
+
+
+.game {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
+    height: 80%;
+}
+
+.keyboard {
+    display: flex;
+    gap: 3px;
+    flex-direction: column;
+    margin-top: auto;
+    height: 30%;
+    width: 100%;
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    height: 33%;
+}
+
+.keyboard-button {
+    background-color: rgb(44, 44, 44);
+    color: white;
+    border-radius: 6px;
+    border: none;
+    height: 100%;
+    min-width: 6rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+}
+.keyboard-button:hover {
+  cursor: pointer;
+}
+
+
+.block {
+    background: rgb(44, 44, 44);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.2rem;
+    font-size: 55px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+.popup {
+}
+.slide-in-top {
+    position: absolute;
+    background-color: rgb(131, 48, 48);
+    margin-right: auto;
+    margin-left: auto;
+    top: 20%;
+    right: 50%;
+    text-align: center;
+	animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-out-top {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+}
